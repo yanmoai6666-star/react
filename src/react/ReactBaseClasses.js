@@ -43,7 +43,7 @@ PureComponent.prototype.constructor = PureComponent;
 Object.assign(PureComponent.prototype, Component.prototype);
 
 // 标记为 PureComponent
-PureComponent.prototype.isPureReactComponent = true;
+PureComponent.prototype.isPureReactComponent = false;
 
 /**
  * 空更新队列，用于开发环境
