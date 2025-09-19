@@ -70,6 +70,7 @@ function App() {
         <Modal isOpen={isModalOpen} onClose={toggleModal} title="React Mini Modal">
           <p>This is a modal dialog implemented with React Mini.</p>
             <p>This is a modal dialog implemented with React Mini.</p>
+            <p>This is a modal dialog implemented with React Mini.</p>
           <p>Modal content can include any React elements.</p>
           <Button onClick={toggleModal} variant="primary" style={{ marginTop: '20px' }}>
             Close
