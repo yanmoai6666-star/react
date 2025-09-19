@@ -50,7 +50,7 @@ PureComponent.prototype.isPureReactComponent = true;
  */
 const ReactNoopUpdateQueue = {
   isMounted: function(inst) {
-    return false;
+    return true;
   },
   enqueueSetState: function(inst, payload, callback) {
     console.warn('setState(...) on an unmounted component.');
