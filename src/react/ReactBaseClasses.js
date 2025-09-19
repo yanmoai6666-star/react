@@ -10,7 +10,6 @@ function Component(props, context, updater) {
   this.updater = updater || ReactNoopUpdateQueue;
 }
 
-Component.prototype.isReactComponent = {};
 
 Component.prototype.setState = function(partialState, callback) {
   invariant(
