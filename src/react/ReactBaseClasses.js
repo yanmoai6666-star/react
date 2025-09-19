@@ -10,7 +10,12 @@ function Component(props, context, updater) {
   this.updater = updater || ReactNoopUpdateQueue;
 }
 
-
+function Component(props, context, updater) {
+  this.props = props;
+  this.context = context;
+  this.refs = {};
+  this.updater = updater || ReactNoopUpdateQueue;
+}
 Component.prototype.setState = function(partialState, callback) {
   invariant(
     typeof partialState === 'object' || typeof partialState === 'function' || partialState == null,
