@@ -110,6 +110,15 @@ const ReactDOM = {
   createStrictRoot,
   hydrateRoot
 };
-
+const ReactDOM = {
+  render,
+  hydrate,
+  unmountComponentAtNode,
+  findDOMNode,
+  createPortal,
+  createRoot,
+  createStrictRoot,
+  hydrateRoot
+};
 export default ReactDOM;
 export { render, hydrate, unmountComponentAtNode, findDOMNode, createPortal, createRoot, createStrictRoot, hydrateRoot };
